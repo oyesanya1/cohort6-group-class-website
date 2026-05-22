@@ -1,27 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-</head>
-<body>
-    <h2><b>Contact Form</b></h2>
-    <p>Send us a Message</p>
-    <form action="" method="post">
-        <label for="">Name</label><br>
-        <input type="text" class="Form control" placeholder="Your Full Name" required /><br><br>
-        <label for="">Phone Number</label><br>
-        <input type="" class="Form control" placeholder="Enter Your Phone Number" required ><br><br>
-        <label for="">Email Address</label><br>
-        <input type="email" class="Form control" placeholder="Enter your valid email" required><br><br>
-        <label for="">Upload Passport photo</label><br>
-        <input type="file" name="" id=""><br><br>
-        <label for="">Message:</label><br>
-        <textarea placeholder="Explain your issues here.." class="Form control" style="columns: 20 ;" required></textarea><br>
-        <button type="submit" class="Form Control">Submit</button>
-        <button type="reset">Reset</button>
+<section class="gallery">
 
-    </form>
-</body>
-</html>
+<div class="section-title">
+
+<p>Campus Gallery</p>
+
+<h2>
+Explore Our Innovation Spaces
+</h2>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<div class="gallery-item">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.gallery{
+    width:90%;
+    margin:auto;
+    padding:7rem 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.15);
+}
+
+</style>
