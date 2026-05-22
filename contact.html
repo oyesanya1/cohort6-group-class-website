@@ -1,27 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-</head>
-<body>
-    <h2><b>Contact Form</b></h2>
-    <p>Send us a Message</p>
-    <form action="" method="post">
-        <label for="">Name</label><br>
-        <input type="text" class="Form control" placeholder="Your Full Name" required /><br><br>
-        <label for="">Phone Number</label><br>
-        <input type="" class="Form control" placeholder="Enter Your Phone Number" required ><br><br>
-        <label for="">Email Address</label><br>
-        <input type="email" class="Form control" placeholder="Enter your valid email" required><br><br>
-        <label for="">Upload Passport photo</label><br>
-        <input type="file" name="" id=""><br><br>
-        <label for="">Message:</label><br>
-        <textarea placeholder="Explain your issues here.." class="Form control" style="columns: 20 ;" required></textarea><br>
-        <button type="submit" class="Form Control">Submit</button>
-        <button type="reset">Reset</button>
+<section class="contact">
 
-    </form>
-</body>
-</html> 
+<div class="contact-container">
+
+<div class="contact-text">
+
+<h2>
+Join NovaEdge Today
+</h2>
+
+<p>
+Become part of a growing community
+of tech innovators.
+</p>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea placeholder="Tell us about yourself"></textarea>
+
+<button type="submit">
+Submit Application
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>NovaEdge Academy</h2>
+
+<p>
+Innovating Education Through Technology
+</p>
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+
+</div>
+
+</footer>
+
+<style>
+
+.contact{
+    width:90%;
+    margin:auto;
+    padding:7rem 0;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:3rem;
+}
+
+.contact-form{
+    background:#101d33;
+    padding:2rem;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:1rem;
+    border:none;
+    border-radius:10px;
+    background:#1a2b46;
+    color:white;
+}
+
+.contact-form textarea{
+    height:150px;
+}
+
+.contact-form button{
+    background:#00d4ff;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    background:#050b14;
+    text-align:center;
+    padding:3rem 2rem;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    background:#101d33;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    background:#00d4ff;
+    transition:0.3s;
+}
+
+</style>
