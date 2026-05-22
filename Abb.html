@@ -138,7 +138,19 @@
     margin-top: .5rem; 
     letter-spacing: .1em; 
 }
+.appetizer-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
+.appetizer-images img {
+    width: 200px;      /* Adjust size */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -269,8 +281,12 @@ We create a warm dining experience where good food and happy moments come togeth
 </header>
 <h4 >Appetizers</h4>
 <p>Start your meal with our delicious appetizers, perfect for sharing or enjoying on your own.</p>
-<img src="IMG_20260521_231558_692.png" alt="Appetizer"> <img src="IMG_20260521_214701_686.png" alt="">
-<img src="IMG_20260521_231614_958.png" alt="">
+<div class="appetizer-images">
+    <img src="IMG_20260521_214701_686.png" alt="Appetizer1">
+    <img src="IMG_20260522_003038_836.png" alt="Appetizer2">
+    <img src="IMG_20260522_001933_590 (1).png" alt="Appetizer3">
+    <img src="IMG_20260521_214716_954.png" alt="Appetizer4">
+</div>
 <p4>Our appetizers are crafted to tantalize your taste buds;
   And set the stage for a Memorable dining experience. 
   From crispy spring rolls to savory samosas, each bite is bursting with flavor. 
@@ -278,7 +294,7 @@ We create a warm dining experience where good food and happy moments come togeth
   Our appetizer menu has something for everyone. 
   Perfect for sharing with friends or enjoying as a delicious start to your meal.</p4>
 <div class="menu">
-
+<h5>Menu</h5>
   <!-- Jollof Rice -->
   <div class="card">
     <img src="Jollof rice.jpg" alt="Jollof Rice">
