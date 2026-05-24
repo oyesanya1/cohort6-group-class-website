@@ -1,55 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="students.html">Students</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ti</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <u>
-            <h1>Welcome to Our Website</h1>
-        </u>
-        
-        <p>This is the home page of our website. Here you can find information about our services, team forming, and contact details. Explore our other pages for more information about us.</p>
+      <input type="radio" name="radio" id="open" class="hidden" />
+      <input type="radio" name="radio" id="close" class="hidden" checked />
+      <nav class="wrapper">
+        <div class="logo">G3Dev</div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#project">Project Gallery</a></li>
+          <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+        <label for="open" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <label for="close" class="cross">
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
     </header>
-    <hr>
+    <section class="hero" id="home">
+      <div class="hero-wrapper">
+        <div class="hero-txt">
+          <h1 class="hero-title">
+            We are Creative:
+            <ol>
+              <li><span>UI/UX Design</span></li>
+              <li><span>Web Design</span></li>
+              <li><span>Web Development</span></li>
+              <li><span>App Development</span></li>
+              <li><span>Game Development</span></li>
+              <li><span>Machine Learning</span></li>
+            </ol>
+          </h1>
+          <p>
+            We create beautiful, responsive and user-friendly websites with
+            modern technologies and engaging user experiences.
+          </p>
+          <div class="hero-btns">
+            <a href="#" class="btn btn-primary">Hire Me</a>
+            <a href="#" class="btn btn-outline">View Portfolio</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/Designer.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="container">
+      <!-- main heading -->
+      <div class="main-title">
+        <h1>My skill</h1>
+        <p>Skills And Services Sections</p>
+      </div>
+      <!-- main heading end -->
+      <div class="row">
+        <!-- left section starts here -->
+        <section class="col">
+          <div class="sub-title">
+            <h2>Programming Skills</h2>
+          </div>
+          <div class="skill-container">
+            <div class="skill">
+              <div class="subject">HTML</div>
+              <div class="progress-bar" value="94%">
+                <div class="progress-line" style="max-width: 94%"></div>
+              </div>
+            </div>
 
-    <h3>List of Topics Learned</h3>
+            <div class="skill">
+              <div class="subject">CSS</div>
+              <div class="progress-bar" value="83%">
+                <div class="progress-line" style="max-width: 83%"></div>
+              </div>
+            </div>
 
-    <h4>Using an Unordered list</h4>
-    <ul>
-        <li>HTML Document Structure</li>
-        <li>Heading and Paragraph</li>
-        <li>Links and Images</li>
-        <li>Lists and Tables</li>
-        <li>Forms and imput Element</li>
-    </ul>
+            <div class="skill">
+              <div class="subject">JAVASCRIPT</div>
+              <div class="progress-bar" value="88%">
+                <div class="progress-line" style="max-width: 88%"></div>
+              </div>
+            </div>
 
-    <h4>Using an Ordered List</h4>
-    <ol>
-        <li>Creating Basic Html file</li>
-        <li>Adding Heading and Text</li>
-        <li>Inserting Images and Links</li>
-        <li>Building Table</li>
-        <li>Making a simple form</li>
-    </ol>
-    <footer>
-        <a href="https://wa.me/2347067946789">Contact us</a> <br>
-        &copy; 2024 Our Website. All rights reserved.
-    </footer> 
-    <p>check and comfirmed</p>
+            <div class="skill">
+              <div class="subject">Php</div>
+              <div class="progress-bar" value="68%">
+                <div class="progress-line" style="max-width: 68%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    
+        <!-- left section ends here  -->
 
-</body>
+        <!-- Right section starts here -->
+
+        <section class="col">
+          <div class="sub-title">
+            <h2>Designing Skills</h2>
+          </div>
+          <div class="skill-container">
+            <div class="skill">
+              <div class="subject">Photoshop</div>
+              <div class="progress-bar" value="82%">
+                <div class="progress-line" style="max-width: 82%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Illustrator</div>
+              <div class="progress-bar" value="74%">
+                <div class="progress-line" style="max-width: 74%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Figma</div>
+              <div class="progress-bar" value="63%">
+                <div class="progress-line" style="max-width: 63%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Responsive design</div>
+              <div class="progress-bar" value="91%">
+                <div class="progress-line" style="max-width: 91%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right section ends here -->
+      </div>
+    </div>
+    </section>
+    <section class="services" id="services">
+      <div class="card-container">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    </div>
+    </section>
+    <section class="project" id="project">
+      <h1>Project Gallery contents</h1>
+    </section>
+    <section class="testimonials" id="testimonials">
+      <h1>Testimonials contents</h1>
+    </section>
+    <section class="contact" id="contact">
+      <h1>Contact contents</h1>
+    </section>
+    <footer class="footer"></footer>
+  </body>
 </html>
