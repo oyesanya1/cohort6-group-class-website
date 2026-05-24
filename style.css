@@ -27,7 +27,7 @@ body {
   font-family: Poppins, Helvetica, sans-serif;
 }
 
-section {
+body>section {
   min-height: 500px;
   padding-top: 100px;
 }
@@ -43,6 +43,7 @@ header {
   top: 0;
   background: white;
   z-index: 1000;
+  filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.3));
 }
 
 .wrapper {
@@ -244,7 +245,6 @@ label {
 
 .container {
   width: 100%;
-  min-height: 100vh;
   padding: 30px 10%;
 }
 .container .main-title {
@@ -286,7 +286,7 @@ label {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .row .col {
   flex-basis: 46%;
@@ -367,7 +367,8 @@ label {
 }
 
 .card-container{
-    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
